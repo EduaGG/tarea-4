@@ -1,0 +1,104 @@
+html {
+    background-color: #ffffff;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+}
+
+nav {
+    background-color: #000000;
+    padding-inline: 20px;
+}
+
+input::placeholder {
+    padding-left: 12px;
+    color: rgb(79, 0, 0);
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px;
+    height: calc(100vh - 100px);
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 5%;
+    border: 1px solid #b0b0b0;
+    margin-inline: 40px;
+}
+
+.card#inputs {
+    width: 32%;
+    height: auto;
+    padding: 4px;
+}
+
+.card#inputs .switch label {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 8px;
+    font-size: 16px;
+}
+
+.card#inputs .center-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.card#inputs button {
+    margin-top: 20px;
+    background-color: #b0b0b0;
+    border-radius: 6px;
+    font-weight: 400;
+    color: black;
+}
+
+.card#image {
+    width: 75%;
+    height: 100%;
+    padding: 4px;
+    font-size: 22px;
+    font-weight: 500;
+    overflow-y: overlay;
+}
+
+.card#image::-webkit-scrollbar {
+    width: auto;
+    height: auto;
+}
+
+.card#image::-webkit-scrollbar-track {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    background: #f1f1f1;
+    border-radius: 20px;
+}
+
+.card#image::-webkit-scrollbar-thumb {
+    background-color: #c1c1c1;
+    border-radius: 20px;
+    border: 3px solid #f1f1f1;
+
+}
+
+.card#image .img-wrapper {
+    flex-wrap: wrap;
+}
+
+.card#image img {
+    width: auto;
+    height: auto;
+    margin: 4px;
+    border-radius: 4px;
+}
